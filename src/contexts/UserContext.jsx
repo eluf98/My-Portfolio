@@ -5,7 +5,7 @@ export const UserContext = createContext();
 
 export function UserContextProvider({ children }) {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
-  const [language, setLanguage] = useLocalStorage("lang", "turkish");
+  const [language, setLanguage] = useState(localStorage.getItem("lang") || "english");
   const [token, setToken] = useLocalStorage("token", null);
 
   // Dark mode class'ı ekle

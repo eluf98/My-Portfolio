@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect} from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Information } from "./components/Information";
@@ -14,11 +14,20 @@ import {Circle} from "./components/Circle";
 
 function App() {
   const { darkMode } = useContext(UserContext);
+  useEffect(() => {
+    // Sayfa yüklendiğinde body'e dark sınıfını ekler veya çıkarır
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
 
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
-        <section className={"-z-10 pb-32 bg-gray-200 dark:bg-zinc-800 "}>
+        <section className={" pb-32 bg-gray-200 dark:bg-[#2A262B]"}>
           <Circle />
           <Header />
           <Information />

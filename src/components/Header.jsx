@@ -13,7 +13,7 @@ export function Header() {
     setLanguage(language === "english" ? "turkish" : "english");
   };
     return (
-      <div className="flex ml-[82rem] mt-[4rem] items-center dark:bg-dark-bg">
+      <div className="flex ml-[82rem] mt-[4rem] items-center dark:bg-dark-bg-1">
         <label className="relative flex items-center group p-2 text-xl font-bold text-pink-700">
           <input
             type="checkbox"
@@ -29,11 +29,7 @@ export function Header() {
         className="font-bold text-pink-700 text-xl cursor-pointer"
         onClick={handleLanguageChange}
       >
-        {language === "turkish" ? "TÜRKÇE" : "ENGLISH"}
-      </label>
-
-      <label className="font-bold text-gray-600 text-xl cursor-pointer">
-        YE GEÇ
+        {language === "turkish" ? "TÜRKÇE'YE GEÇ" : "Switch to Turkish"}
       </label>
       </div>
     );

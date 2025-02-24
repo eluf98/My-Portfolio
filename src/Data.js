@@ -58,7 +58,7 @@ export const projectsInformation = [
       englishDescription:
         "In the 1st month of the Full-Stack Developer training, the template design of Netflix's home page was made using basic HTML and CSS techniques.",
       structures: ["html", "css"],
-      github: "https://github.com/eluf98/WitFlix.gitg",
+      github: "https://github.com/eluf98/WitFlix.git",
       app: "",
       turkishLaptopPos: "translate-x-[-1.5rem] translate-y-[4.35rem] ",
       turkishImgPos: "translate-x-[3.95rem] translate-y-[3.24rem] ",
@@ -145,14 +145,14 @@ export const toggleLanguages = {
       "Sakarya Univ. Electirical and Electronics Engineering Undergraduate, 2022",
     turkishAboutMeFirstPartDescp:
       "2 yıla yakın full-stack developer tecrübem var. ",
-    turkishAboutMeSecondPartDescp: "Polity",
+    turkishAboutMeSecondPartDescp: "",
     turkishAboutMeThirdPartDescp:
       " Şimdi ise Full-Stack Developer olarak kendimi her geçen gün geliştiriyorum.",
     turkishAboutMeFinalPartDescp:
       "Full-Stack Developer  olarak da 3 projem bulunmaktadır. Bunlar, WitFlix, Pizza Sipariş Sitesi ve CV sitesidir.",
     englishAbouteMeFirstDescp:
       "I have nearly 2 years of full-stack developer experience.",
-    englishAbouteMeSecondDescp: "Polity, ",
+    englishAbouteMeSecondDescp: "",
     englishAbouteMeThirdDescp:
       "Now, as a Full-Stack Developer, I improve myself every day.",
     englishAbouteMeFinalDescp:
