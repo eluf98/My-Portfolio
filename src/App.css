@@ -1,0 +1,12 @@
+body {
+    padding: 0 0;
+    margin: 0 0;
+    /* Ekranın yatay eksende taşma durumunda ekranın x ekseninde büyümesini engelliyor */
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 960px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
