@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect} from "react";
 import "./App.css";
+import "./index.css";
 import { Header } from "./components/Header";
 import { Information } from "./components/Information";
 import { Skill } from "./components/Skill";
@@ -14,7 +15,7 @@ import {Circle} from "./components/Circle";
 
 function App() {
   const { darkMode } = useContext(UserContext);
-  useEffect(() => {
+  /*useEffect(() => {
     // Sayfa yüklendiğinde body'e dark sınıfını ekler veya çıkarır
     if (darkMode) {
       document.body.classList.add("dark");
@@ -22,28 +23,25 @@ function App() {
       document.body.classList.remove("dark");
     }
   }, [darkMode]);
-
+*/
 
   return (
-    <>
-      <div className={darkMode ? "dark" : ""}>
-        <section className={" pb-32 bg-gray-200 dark:bg-[#2A262B]"}>
-          <Circle />
-          <Header />
-          <Information />
-        </section>
-      </div>
-
-      <div className={darkMode ? "dark" : ""}>
-        <section className="dark:bg-zinc-700">
-          <Skill />
-        </section>
-      </div>
-      <Profile />
-      <Projects />
-      <Footer />
-      <Operation />
-    </>
+    <div className={darkMode ? "dark" : ""}>
+    <section className={darkMode ? "pb-32 dark bg-[#2A262B] text-white " : "pb-32 bg-gray-200 text-black"}>
+    
+      <Circle />
+      <Header />
+      <Information />
+    </section>
+    <section className="dark:bg-[#2A262B]">
+      <Skill />
+    </section>
+    <Profile />
+    <Projects />
+    <Footer />
+    <Operation />
+  </div>
+  
   );
 }
 

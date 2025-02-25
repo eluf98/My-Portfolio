@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+/* Tailwind sonrası kendi stillerini ekle */
+body {
+  background-color: white; /* Açık tema için varsayılan */
+}
+
+.dark body {
+  background-color: #2A262B; /* Dark mode için */
+}

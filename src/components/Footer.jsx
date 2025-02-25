@@ -6,15 +6,23 @@ export function Footer() {
   const { darkMode, language } = useContext(UserContext);
 
   return (
-    <section className={darkMode ? "dark " : ""}>
-      <div className="flex justify-center items-center relative z-30 gap-20 dark:bg-zinc-700">
-        <div className="w-[30%] ">
-          <label className="relative font-semibold text-5xl leading-relaxed z-10 dark:text-white max-[960px]:text-3xl">
+    <section className={darkMode ? "dark" : ""}>
+      <div
+        className={`flex justify-center items-center relative z-30 gap-20 ${
+          darkMode ? "bg-[#484148]" : "bg-white"
+        }`}
+      >
+        <div className="w-[30%]">
+          <label
+            className={`relative font-semibold text-5xl leading-relaxed z-10 ${
+              darkMode ? "text-white" : "text-black"
+            } max-[960px]:text-3xl`}
+          >
             {language === TURKISH ? footerDescp.turkish : footerDescp.english}
             <div className="absolute -z-10 w-[24rem] max-[960px]:w-0 h-[1.5rem] bg-purple-600 rounded-[.5rem] translate-y-[-6.5rem] translate-x-[5rem]"></div>
           </label>
         </div>
-        <div className="flex flex-col gap-2 ">
+        <div className="flex flex-col gap-2">
           <a
             target="_blank"
             className="text-blue-500 text-2xl font-semibold hover:underline cursor-pointer"

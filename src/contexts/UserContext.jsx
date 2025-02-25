@@ -8,20 +8,17 @@ export function UserContextProvider({ children }) {
   const [language, setLanguage] = useState(localStorage.getItem("lang") || "english");
   const [token, setToken] = useLocalStorage("token", null);
 
-  // Dark mode class'ı ekle
   useEffect(() => {
-    console.log("Dark Mode Başlangıç Durumu:", darkMode);
+    console.log("Dark Mode Durumu:", darkMode);  // Konsolda kontrol et
     if (darkMode) {
-      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");  // 🔥 Burada `document.body` yerine `document.documentElement`
     } else {
-      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
 
   return (
-    <UserContext.Provider
-      value={{ darkMode, setDarkMode, language, setLanguage, token }}
-    >
+    <UserContext.Provider value={{ darkMode, setDarkMode, language, setLanguage, token }}>
       {children}
     </UserContext.Provider>
   );
