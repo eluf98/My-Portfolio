@@ -19,7 +19,7 @@ export function Footer() {
             } max-[960px]:text-3xl`}
           >
             {language === TURKISH ? footerDescp.turkish : footerDescp.english}
-            <div className="absolute -z-10 w-[24rem] max-[960px]:w-0 h-[1.5rem] bg-purple-600 rounded-[.5rem] translate-y-[-6.5rem] translate-x-[5rem]"></div>
+            <div className="absolute -z-10 w-[24rem] max-[960px]:w-0 h-[1.5rem] bg-[#3968A0] rounded-[.5rem] translate-y-[-6.5rem] translate-x-[5rem]"></div>
           </label>
         </div>
         <div className="flex flex-col gap-2">
