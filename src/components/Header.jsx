@@ -13,28 +13,41 @@ export function Header() {
     // Eğer dil İngilizce ise, Türkçe'ye geçiş yap
     setLanguage(language === "english" ? "turkish" : "english");
   };
-  return (
+  
+   return (
     <section className={darkMode ? "dark bg-[#2A262B]" : "bg-gray-200"}>
       <div className="container mx-auto px-4 py-4">
-        <div className={`flex flex-wrap justify-end items-center gap-4`}>
-          <label className="relative flex items-center group p-2 text-xl font-bold text-pink-700">
+        <div className="flex flex-wrap justify-end items-center gap-4">
+          {/* Dark Mode Toggle */}
+          <label className="relative flex items-center group p-2 text-xl font-bold text-pink-700 cursor-pointer">
             <input
               type="checkbox"
-              className="absolute ml-6 left-1/2 -translate-x-1/2 w-6 h-6 peer appearance-none rounded-md"
+              className="absolute opacity-0 w-0 h-0 peer"
               checked={darkMode}
               onChange={handleDarkModeChange}
             />
-            <span className="w-16 h-[26px] flex items-center flex-shrink-0 p-1 bg-pink-600 rounded-full duration-300 ease-in-out peer-checked:bg-red-600 after:w-8 after:h-8 after:bg-amber-300 after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6 group-hover:after:translate-x-1"></span>
-            DARK MODE
+            <span
+              className={`w-16 h-[26px] flex items-center flex-shrink-0 p-1 rounded-full duration-300 ease-in-out 
+                ${darkMode ? "bg-black" : "bg-pink-600"} peer-checked:bg-black`}
+            >
+              {/* Yuvarlak Kısım */}
+              <span
+                className={`w-8 h-8 rounded-full shadow-md flex items-center justify-center duration-300 transform 
+                  ${darkMode ? "translate-x-0 bg-amber-300" : "translate-x-6 bg-amber-300"}`}
+              ></span>
+            </span>
+            <span className="ml-2">{darkMode ? "LIGHT MODE" : "DARK MODE"}</span>
           </label>
 
+          {/* Ayırıcı Çizgi */}
           <span className="font-bold text-pink-700 hidden sm:block">|</span>
 
+          {/* Dil Değiştirme */}
           <label
             className="font-bold text-pink-700 text-xl cursor-pointer"
             onClick={handleLanguageChange}
           >
-            {language === "turkish" ? "TÜRKÇE'YE GEÇ" : "Switch to Turkish"}
+            {language === "turkish" ? "Switch To English" : "TÜRKÇE'YE GEÇ"}
           </label>
         </div>
       </div>

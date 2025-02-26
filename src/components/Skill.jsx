@@ -13,13 +13,13 @@ export function Skill() {
         }`}
       >
         <h1
-          className={`font-semibold text-[4rem] mb-14 ${
+          className={`font-semibold text-[3rem] sm:text-[4rem] mb-14 ${
             darkMode ? "text-white" : "text-black"
           }`}
         >
           Skills
         </h1>
-        <div className="flex gap-14 w-[66.2%] overflow-auto mb-8">
+        <div className="flex gap-8 sm:gap-14 w-full sm:w-[66.2%] overflow-auto mb-8">
           {skillIcons.map((item, index) => {
             return (
               <div key={item.id || index} className="relative flex flex-col">
@@ -30,10 +30,10 @@ export function Skill() {
                     item.boxColor
                   }
                 >
-                  <img className="absolute w-36" src={item.icon} />
+                  <img className="absolute w-24 sm:w-36" src={item.icon} />
                 </div>
                 <label
-                  className={`text-center mt-4 font-semibold text-[1.75rem] ${
+                  className={`text-center mt-4 font-semibold text-[1.25rem] sm:text-[1.75rem] ${
                     darkMode ? "text-white" : "text-black"
                   }`}
                 >
@@ -44,7 +44,7 @@ export function Skill() {
           })}
         </div>
       </div>
-      <div className="absolute z-10 w-[9rem] h-[3.5rem] bg-gray-600 rounded-r-[5rem] translate-y-[1rem]"></div>
+      <div className="absolute z-10 w-[7rem] sm:w-[9rem] h-[3.5rem] bg-gray-600 rounded-r-[5rem] translate-y-[1rem]"></div>
     </>
   );
 }
