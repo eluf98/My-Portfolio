@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
-import profile from "../assets/profile.png";
+import profilee from "../assets/profilee.png";
 import "boxicons";
 
 export function Information() {
@@ -19,8 +19,8 @@ export function Information() {
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-start relative">
                         <label className="z-20 relative font-semibold text-[1.25rem] sm:text-[2rem] md:text-[3.5rem] w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
                             {language === "turkish"
-                                ? "Ben Almila. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri tasarlayabilirim. Tanışalım!"
-                                : "I’m Almila. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!"}
+                                ? "Ben Elif. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri tasarlayabilirim. Tanışalım!"
+                                : "I’m Elif. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!"}
                         </label>
                         <div className="absolute w-[16rem] h-[2rem] bg-pink-600 rounded-[.5rem] translate-y-[2rem] md:translate-y-[2rem] left-[10rem] md:left-[5rem]"></div>
                         
@@ -28,7 +28,7 @@ export function Information() {
                         <div className="relative w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[18rem] md:w-[30rem] md:h-[27.5rem] bg-pink-600 rounded-[2.5rem] mt-6 md:mt-0">
                             <img
                                 className="absolute w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[18rem] md:w-[30rem] md:h-[27.5rem] mt-4 md:mt-6 ml-4 md:ml-6 rounded-[2.5rem]"
-                                src={profile}
+                                src={profilee}
                             />
                         </div>
                     </div>
@@ -42,8 +42,8 @@ export function Information() {
                         {language === "turkish"
                             ? "Şu anda UX, UI ve Web Tasarım projeleri için freelance çalışıyorum. Takımınıza katılmam için davet edin ->"
                             : "Currently Freelancing for UX, UI, & Web Design Project. Invite me to join your team ->"}{" "}
-                        <a className="text-pink-700 underline" href="mailto:pratamaiosi@gmail.com">
-                            pratamaiosi@gmail.com
+                        <a className="text-pink-700 underline" href="mailto:elifyuce99@gmail.com">
+                            elifyuce99@gmail.com
                         </a>
                     </label>
 
