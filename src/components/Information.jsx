@@ -19,8 +19,8 @@ export function Information() {
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-start relative">
                         <label className="z-20 relative font-semibold text-[1.25rem] sm:text-[2rem] md:text-[3.5rem] w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
                             {language === "turkish"
-                                ? "Ben Elif. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri tasarlayabilirim. Tanışalım!"
-                                : "I’m Elif. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!"}
+                                ? "Ben Elif Gündoğan. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri tasarlayabilirim. Tanışalım!"
+                                : "I’m Elif Gündoğan. I’m a full-stack developer. I can craft solid and scalable frontend products.Let’s meet!"}
                         </label>
                         <div className="absolute w-[16rem] h-[2rem] bg-pink-600 rounded-[.5rem] translate-y-[2rem] md:translate-y-[2rem] left-[10rem] md:left-[5rem]"></div>
                         
